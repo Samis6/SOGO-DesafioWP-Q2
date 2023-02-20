@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minha página</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all the tabs
+      var tabs = document.querySelectorAll('.tab a');
+  
+      // Add a click event listener to each tab
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function(event) {
+  
+          // Remove the 'active' class from all tabs
+          tabs.forEach(function(tab) {
+            tab.classList.remove('active');
+          });
+  
+          // Add the 'active' class to the clicked tab
+          event.target.classList.add('active');
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <section class="ajuda-section">
+    <h2 class="ajuda-title">Em que podemos te ajudar?</h2>
+    <p class="ajuda-subtitle">Escolha de forma rápida o serviço que procura</p>
+    <ul class="tab">
+      <li><a href="#" class="active">Mais acessados</a></li>
+      <li><a href="#">Transparência</a></li>
+      <li><a href="#">Cidadão</a></li>
+      <li><a href="#">Servidor</a></li>
+      <li><a href="#">Turismo</a></li>
+      <li><a href="#">Tributário</a></li>
+    </ul>
+
+    <table class="botao-table">
+      <tr>
+        <td><button class="botao"><img src="Icons/portal.png" alt="Ícone 1"><span class="botao-titulo">Portal da Transparência</span></button></td>
+        <td><button class="botao"><img src="Icons/serviços.png" alt="Ícone 2"><span class="botao-titulo">Serviços SAAE</span></button></td>
+        <td><button class="botao"><img src="Icons/licita.png" alt="Ícone 3"><span class="botao-titulo">licitações e Contratos</span></button></td>
+      </tr>
+      <tr>
+        <td><button class="botao"><img src="Icons/diario.png" alt="Ícone 4"><span class="botao-titulo">Diário Oficial</span></button></td>
+        <td><button class="botao"><img src="Icons/plano.png" alt="Ícone 5"><span class="botao-titulo">Plano Plurianual</span></button></td>
+        <td><button class="botao"><img src="Icons/conven.png" alt="Ícone 6"><span class="botao-titulo">Convênios</span></button></td>
+      </tr>
+      <tr>
+        <td><button class="botao"><img src="Icons/regula.png" alt="Ícone 7"><span class="botao-titulo">Regulamentação da LAI</span></button></td>
+        <td><button class="botao"><img src="Icons/ouvidoria.png" alt="Ícone 8"><span class="botao-titulo">Ouvidoria</span></button></td>
+        <td><button class="botao"><img src="Icons/escola.png" alt="Ícone 9"><span class="botao-titulo">Escola de Gestão</span></button></td>
+      </tr>
+    </table>
+    
+
+     </section>
+  
+</body>
+
+</html>
